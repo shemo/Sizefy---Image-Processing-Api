@@ -18,8 +18,8 @@ module.exports = {
   rules: {
     'prettier/prettier': 2,
     semi: ['error', 'never'],
-    'no-console': 1, //warning
+    'no-console': 0, //warning
     'no-var': 'error',
     'prefer-const': 'error',
   },
-}
+};

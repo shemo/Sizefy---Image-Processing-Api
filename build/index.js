@@ -9,6 +9,6 @@ const app = (0, express_1.default)();
 const port = 3000;
 app.use(routes_1.default);
 app.listen(port, () => {
-    console.log(`Sizefy app listening on port ${port}`);
+    console.log(`Sizefy app running on port ${port}`);
 });
 exports.default = app;

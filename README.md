@@ -39,6 +39,10 @@ yarn test
 yarn build
 
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29da179e50350d4c495aaabc5112c7a54f786503
 
 - Write the endpoint url as mentioned above, and replace values in curly braces with your values. (default port number used is 3000)
   Example:

@@ -18,7 +18,7 @@ const resizeImage = async (
       return resizedImage;
     }
   } catch (err) {
-    console.error(err);
+    return err;
   }
 };
 

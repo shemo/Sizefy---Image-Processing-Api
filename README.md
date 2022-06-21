@@ -43,7 +43,7 @@ yarn build
 - Write the endpoint url as mentioned above, and replace values in curly braces with your values. (default port number used is 3000)
   Example:
 
-http://localhost:3000/api/image?name=fjord.jpg&width=500&height=300
+http://localhost:3000/image?name=fjord.jpg&width=500&height=300
 
 - Image must be a jpg image.
 - The images to be resized should be in 📁assets at the root directory of the project.

@@ -7,7 +7,7 @@ const checkCached = async (
 ): Promise<Boolean> => {
   const cachedFiles = await fsPromises.readdir(`assets/assets-resized`);
   const file = cachedFiles.find(
-    (file) => file === `${imageName}-${width}-${height}`
+    (file) => file === `${width}-${height}-${imageName}`
   );
   if (file) {
     return true;

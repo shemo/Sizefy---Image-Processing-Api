@@ -14,7 +14,7 @@ const resizeImage = async (
       const resizedImage: sharp.OutputInfo = await sharp(`assets/${imageName}`)
         .resize(width, height, { fit: 'cover' })
         .toFormat('jpeg', { mozjpeg: true })
-        .toFile(`assets/assets-resized/${imageName}-${width}-${height}`);
+        .toFile(`assets/assets-resized/${width}-${height}-${imageName}`);
       return resizedImage;
     }
   } catch (err) {

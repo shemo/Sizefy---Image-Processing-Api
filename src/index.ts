@@ -7,7 +7,7 @@ const port = 3000;
 app.use(routes);
 
 app.listen(port, () => {
-  console.log(`Sizefy app listening on port ${port}`);
+  console.log(`Sizefy app running on port ${port}`);
 });
 
 export default app;

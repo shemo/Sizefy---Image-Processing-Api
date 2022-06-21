@@ -1,35 +1,44 @@
-# Image Processing API 🖼️
+# Sizefy: Image Processing API
 
-It is a nodejs API to resize jpg images to the wanted dimensions and thus is very helpful in providing lower image sizes for use in different projects.
+Nodejs powerfull API to resize jpg images to unlimited dimensionsprovided with the following features.
 
-In case the image is previously resized, it should have been cached and the api provide it preserving the cost of re-processing it again.
+Request check: validate teh request to make sure all requested parameters are valid. i.e validate there is an image name , width and a height, Validate the dimentions are greater than zero.
+
+Cach check: In case the image is previously resized, it should have been cached and the api provide it preserving the cost of re-processing it again.
 
 ### API Endpoint
 
-http://localhost:{port}/api/image?name={image-name.jpg}&width={new-width}&height={new-height}
+http://localhost:{port}/image?name={imageName.jpg}&width={newWidth}&height={newHeight}
 
 ### Instructions
 
-- Install project dependencies via terminal.
+- To install the project run:
 
 ```
-npm install
-```
-
-- Run the project via terminal
+yarn install
 
 ```
-npm build/.
+
+- To start the project run:
+
+```
+yarn start
+
 ```
 
-- Write the endpoint url as mentioned above, and replace values in curly braces with your values. (default port number used is 3888)
+- To run the unit testing:
+
+```
+yarn test
+
+```
+
+- Write the endpoint url as mentioned above, and replace values in curly braces with your values. (default port number used is 3000)
   Example:
 
-```
-http://localhost:3000/api/image?name=test-img.jpg&width=500&height=300
-```
+http://localhost:3000/api/image?name=fjord.jpg&width=500&height=300
 
 - Image must be a jpg image.
-- The images to be resized should be in 📁images at the root directory of the project.
-- The resized image will be inside 📁resized at the root directory of the project.
-- The resized image should have the name image-name-{width}-{height}.jpg. For example if the image name was `test-img.jpg`, the resized 400 x 300 image name will be `400-300-test-img.jpg`.
+- The images to be resized should be in 📁assets at the root directory of the project.
+- The resized image will be inside 📁assets-resized inside the assets folder.
+- The resized image should have the name {width}-{height}-imageName.jpg. For example if the image name was `fjord.jpg`, the resized 400 x 300 image name will be `200-300-fjord.jpg`.

@@ -22,7 +22,7 @@ describe('Test endpoints', () => {
 describe('Test checkCached function', () => {
   it('should be true when image name with same width & height found', async () => {
     const result = await checkCached('icelandwaterfall.jpg', 300, 250);
-    expect(result).toBeTruthy();
+    expect(result).toBe(true);
   });
 
   it('should be false when image name is not found in cached image folder while width & height are right', async () => {

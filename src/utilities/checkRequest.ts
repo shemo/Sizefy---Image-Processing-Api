@@ -7,8 +7,12 @@ const checkRequest = async (
 ): Promise<string> => {
   if (!imageName) {
     return 'no image name';
-  } else if (!width || !height) {
-    return 'no width or height';
+  } else if (!width && !height) {
+    return 'no width and height';
+  } else if (!width) {
+    return 'no width';
+  } else if (!height) {
+    return 'no height';
   } else if (width <= 0 || height <= 0) {
     return 'width or height < 0';
   } else if (!(await checkExisting(imageName))) {
